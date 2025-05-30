@@ -23,9 +23,6 @@ passenger_count = st.slider("Passenger Count", min_value=1, max_value=8, value=1
 # 2. API URL
 url = 'https://taxifare.lewagon.ai/predict'  # Replace with your API if available
 
-# 3. Show a warning if still using default API
-if url == 'https://taxifare.lewagon.ai/predict':
-    st.info('Using Le Wagon demo API – replace with your own if deployed.')
 
 # 4. Submit button
 if st.button("Predict Fare"):
